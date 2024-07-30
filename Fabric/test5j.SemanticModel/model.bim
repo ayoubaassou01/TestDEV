@@ -1,0 +1,323 @@
+{
+  "compatibilityLevel": 1604,
+  "model": {
+    "annotations": [
+      {
+        "name": "__PBI_TimeIntelligenceEnabled",
+        "value": "0"
+      },
+      {
+        "name": "PBIDesktopVersion",
+        "value": "2.131.7350.2 (Main)"
+      },
+      {
+        "name": "PBI_QueryOrder",
+        "value": "[\"DatabaseQuery\"]"
+      }
+    ],
+    "collation": "Latin1_General_100_BIN2_UTF8",
+    "culture": "en-US",
+    "cultures": [
+      {
+        "name": "en-US",
+        "linguisticMetadata": {
+          "content": {
+            "Language": "en-US",
+            "Version": "1.0.0"
+          },
+          "contentType": "json"
+        }
+      }
+    ],
+    "dataAccessOptions": {
+      "legacyRedirects": true,
+      "returnErrorValuesAsNull": true
+    },
+    "defaultPowerBIDataSourceVersion": "powerBI_V3",
+    "expressions": [
+      {
+        "name": "DatabaseQuery",
+        "annotations": [
+          {
+            "name": "PBI_IncludeFutureArtifacts",
+            "value": "False"
+          }
+        ],
+        "expression": [
+          "let",
+          "    database = Sql.Database(\"G6J6QASTP7XUJIFFLGPPSRVHEE-QFFSGWFYTATU5JVMBD6WACGSOQ.datawarehouse.fabric.microsoft.com\", \"d9a137cf-cd62-48a7-9538-09b86d9bc4d4\")",
+          "in",
+          "    database"
+        ],
+        "kind": "m",
+        "lineageTag": "47d104d8-f30f-4ece-9c3b-f35ba59597d4"
+      }
+    ],
+    "sourceQueryCulture": "en-US",
+    "tables": [
+      {
+        "name": "on_demand_report",
+        "annotations": [
+          {
+            "name": "PBI_ResultType",
+            "value": "Table"
+          }
+        ],
+        "columns": [
+          {
+            "name": "_c0",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "cdaed710-df93-4b81-83e1-76cce6e12e52",
+            "sourceColumn": "_c0",
+            "sourceLineageTag": "_c0",
+            "sourceProviderType": "varchar(8000)",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "_c1",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "feeba6cd-3e3d-4286-803f-d821871b1c8e",
+            "sourceColumn": "_c1",
+            "sourceLineageTag": "_c1",
+            "sourceProviderType": "varchar(8000)",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "_c2",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "384c9824-28c4-4fc9-ae63-d2c9add6410f",
+            "sourceColumn": "_c2",
+            "sourceLineageTag": "_c2",
+            "sourceProviderType": "varchar(8000)",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "_c3",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "ea19ad3a-95fe-49b0-82b5-b589b8eb1097",
+            "sourceColumn": "_c3",
+            "sourceLineageTag": "_c3",
+            "sourceProviderType": "varchar(8000)",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "_c4",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "371a2ca3-7455-4fbd-8a8e-5d3d9b7dd34b",
+            "sourceColumn": "_c4",
+            "sourceLineageTag": "_c4",
+            "sourceProviderType": "varchar(8000)",
+            "summarizeBy": "none"
+          }
+        ],
+        "lineageTag": "37d04990-fd8f-481f-ac1a-8e56443ebf70",
+        "partitions": [
+          {
+            "name": "on_demand_report",
+            "mode": "directLake",
+            "source": {
+              "entityName": "on_demand_report",
+              "expressionSource": "DatabaseQuery",
+              "schemaName": "dbo",
+              "type": "entity"
+            }
+          }
+        ],
+        "sourceLineageTag": "[dbo].[on_demand_report]"
+      },
+      {
+        "name": "NYCTaxi",
+        "annotations": [
+          {
+            "name": "PBI_ResultType",
+            "value": "Table"
+          }
+        ],
+        "columns": [
+          {
+            "name": "squadName",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "705a7ec0-abf5-4b37-abee-d1bd13268743",
+            "sourceColumn": "squadName",
+            "sourceLineageTag": "squadName",
+            "sourceProviderType": "varchar(8000)",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "homeTown",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "883eb205-ad2d-49fe-be33-2222cc7d9737",
+            "sourceColumn": "homeTown",
+            "sourceLineageTag": "homeTown",
+            "sourceProviderType": "varchar(8000)",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "formed",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "e34b9ca4-6d4b-4b7c-a929-0961b3dabeaa",
+            "sourceColumn": "formed",
+            "sourceLineageTag": "formed",
+            "sourceProviderType": "bigint",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "secretBase",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "a37e81a4-f285-414c-8496-15b37be19455",
+            "sourceColumn": "secretBase",
+            "sourceLineageTag": "secretBase",
+            "sourceProviderType": "varchar(8000)",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "active",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "boolean",
+            "formatString": "\"TRUE\";\"TRUE\";\"FALSE\"",
+            "lineageTag": "47a189e3-ddc3-482d-b35c-6f41ce2a0c05",
+            "sourceColumn": "active",
+            "sourceLineageTag": "active",
+            "sourceProviderType": "bit",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "members.name",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "6aa5758d-da69-4485-9816-2e86f04c3484",
+            "sourceColumn": "members.name",
+            "sourceLineageTag": "members.name",
+            "sourceProviderType": "varchar(8000)",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "members.age",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "8a48a34a-b3b8-4060-bc34-f16b288cdd33",
+            "sourceColumn": "members.age",
+            "sourceLineageTag": "members.age",
+            "sourceProviderType": "bigint",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "members.secretIdentity",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "de0538d4-199d-444c-adc9-9a9e2fcbd147",
+            "sourceColumn": "members.secretIdentity",
+            "sourceLineageTag": "members.secretIdentity",
+            "sourceProviderType": "varchar(8000)",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "members.powers",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "64f87f53-3b56-4c90-9c45-f3d3bba897ac",
+            "sourceColumn": "members.powers",
+            "sourceLineageTag": "members.powers",
+            "sourceProviderType": "varchar(8000)",
+            "summarizeBy": "none"
+          }
+        ],
+        "lineageTag": "fbe08448-c77f-4a20-a9e0-f6a40e52603b",
+        "partitions": [
+          {
+            "name": "NYCTaxi",
+            "mode": "directLake",
+            "source": {
+              "entityName": "NYCTaxi",
+              "expressionSource": "DatabaseQuery",
+              "schemaName": "dbo",
+              "type": "entity"
+            }
+          }
+        ],
+        "sourceLineageTag": "[dbo].[NYCTaxi]"
+      }
+    ]
+  }
+}

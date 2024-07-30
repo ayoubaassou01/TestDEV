@@ -1,0 +1,223 @@
+{
+  "compatibilityLevel": 1604,
+  "model": {
+    "annotations": [
+      {
+        "name": "__PBI_TimeIntelligenceEnabled",
+        "value": "0"
+      },
+      {
+        "name": "PBIDesktopVersion",
+        "value": "2.131.7350.2 (Main)"
+      },
+      {
+        "name": "PBI_QueryOrder",
+        "value": "[\"DatabaseQuery\"]"
+      }
+    ],
+    "collation": "Latin1_General_100_BIN2_UTF8",
+    "culture": "en-US",
+    "cultures": [
+      {
+        "name": "en-US",
+        "linguisticMetadata": {
+          "content": {
+            "Language": "en-US",
+            "Version": "1.0.0"
+          },
+          "contentType": "json"
+        }
+      }
+    ],
+    "dataAccessOptions": {
+      "legacyRedirects": true,
+      "returnErrorValuesAsNull": true
+    },
+    "defaultPowerBIDataSourceVersion": "powerBI_V3",
+    "expressions": [
+      {
+        "name": "DatabaseQuery",
+        "annotations": [
+          {
+            "name": "PBI_IncludeFutureArtifacts",
+            "value": "False"
+          }
+        ],
+        "expression": [
+          "let",
+          "    database = Sql.Database(\"G6J6QASTP7XUJIFFLGPPSRVHEE-QFFSGWFYTATU5JVMBD6WACGSOQ.datawarehouse.fabric.microsoft.com\", \"d9a137cf-cd62-48a7-9538-09b86d9bc4d4\")",
+          "in",
+          "    database"
+        ],
+        "kind": "m",
+        "lineageTag": "41b253bc-45d1-493c-b221-25605cea91f9"
+      }
+    ],
+    "sourceQueryCulture": "en-US",
+    "tables": [
+      {
+        "name": "NYCTaxi",
+        "annotations": [
+          {
+            "name": "PBI_ResultType",
+            "value": "Table"
+          }
+        ],
+        "columns": [
+          {
+            "name": "squadName",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "84cda086-d073-4400-9f16-a815142e3604",
+            "sourceColumn": "squadName",
+            "sourceLineageTag": "squadName",
+            "sourceProviderType": "varchar(8000)",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "homeTown",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "92649a48-afd8-4f22-8459-ce4de18896aa",
+            "sourceColumn": "homeTown",
+            "sourceLineageTag": "homeTown",
+            "sourceProviderType": "varchar(8000)",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "formed",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "18645d9a-ab12-43fc-8f11-a8e0f6eaae14",
+            "sourceColumn": "formed",
+            "sourceLineageTag": "formed",
+            "sourceProviderType": "bigint",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "secretBase",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "1e5071fe-df4e-42a1-a0b5-a8102c890075",
+            "sourceColumn": "secretBase",
+            "sourceLineageTag": "secretBase",
+            "sourceProviderType": "varchar(8000)",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "active",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "boolean",
+            "formatString": "\"TRUE\";\"TRUE\";\"FALSE\"",
+            "lineageTag": "826c9e36-3f18-460b-bbf5-5dd0b569a607",
+            "sourceColumn": "active",
+            "sourceLineageTag": "active",
+            "sourceProviderType": "bit",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "members.name",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "63b4e2ff-7c7d-409f-9628-dded82f13a2c",
+            "sourceColumn": "members.name",
+            "sourceLineageTag": "members.name",
+            "sourceProviderType": "varchar(8000)",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "members.age",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "42814fdc-a23e-4dfb-ab54-960c5cec0dcb",
+            "sourceColumn": "members.age",
+            "sourceLineageTag": "members.age",
+            "sourceProviderType": "bigint",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "members.secretIdentity",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "c5165b46-4f0e-4260-af04-71e4b01dd425",
+            "sourceColumn": "members.secretIdentity",
+            "sourceLineageTag": "members.secretIdentity",
+            "sourceProviderType": "varchar(8000)",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "members.powers",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "979c7bf9-0ec5-421e-ab8a-66733be7b0ca",
+            "sourceColumn": "members.powers",
+            "sourceLineageTag": "members.powers",
+            "sourceProviderType": "varchar(8000)",
+            "summarizeBy": "none"
+          }
+        ],
+        "lineageTag": "ce1b3db0-87a6-4057-950d-08388b9f93da",
+        "partitions": [
+          {
+            "name": "NYCTaxi",
+            "mode": "directLake",
+            "source": {
+              "entityName": "NYCTaxi",
+              "expressionSource": "DatabaseQuery",
+              "schemaName": "dbo",
+              "type": "entity"
+            }
+          }
+        ],
+        "sourceLineageTag": "[dbo].[NYCTaxi]"
+      }
+    ]
+  }
+}
