@@ -1,0 +1,38 @@
+{
+  "properties": {
+    "activities": [
+      {
+        "name": "Wait1",
+        "type": "Wait",
+        "dependsOn": [],
+        "typeProperties": {
+          "waitTimeInSeconds": 5
+        }
+      },
+      {
+        "name": "Dataflow1",
+        "type": "RefreshDataflow",
+        "dependsOn": [
+          {
+            "activity": "Wait1",
+            "dependencyConditions": [
+              "Succeeded"
+            ]
+          }
+        ],
+        "policy": {
+          "timeout": "0.12:00:00",
+          "retry": 0,
+          "retryIntervalInSeconds": 30,
+          "secureOutput": false,
+          "secureInput": false
+        },
+        "typeProperties": {
+          "dataflowId": "0bd924ba-f6ab-4858-b41e-315746acba0a",
+          "workspaceId": "58234b81-98b8-4e27-a6ac-08fd6008d274",
+          "notifyOption": "NoNotification"
+        }
+      }
+    ]
+  }
+}
